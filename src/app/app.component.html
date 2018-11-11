@@ -7,7 +7,7 @@
   </a>
   <div class="navbar-expand ml-auto navbar-nav">
     <div class="navbar-nav">
-      <button mat-button class="mr-3"><mat-icon>person</mat-icon>Account</button>
+      <button (click)="_dialogManager.openDialog()" mat-button class="mr-3"><mat-icon>person</mat-icon>Account</button>
       <button [routerLink]="['/login']" class="mr-1" color="primary" mat-stroked-button>
         Login
       </button>

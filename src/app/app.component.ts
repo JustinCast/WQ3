@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DialogManagerService } from './dialog-manager.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Webquest3';
+  constructor(public _dialogManager: DialogManagerService){}
+
+  openAccountDialog() {
+    this._dialogManager.openDialog();
+  }
 }

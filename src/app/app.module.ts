@@ -8,19 +8,24 @@ import { MaterialModule } from './material/material.module';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { AccountComponent } from './account/account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    SignUpComponent
+    SignUpComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule
+  ],
+  entryComponents: [
+    AccountComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
